@@ -274,7 +274,7 @@ export const questions_ia_900 = [
     expanation: "Implementar um process de validação do modelo de IA garante o princípio de confiabilidade e segurança",
     reference: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai#reliability-and-safety"
   },
-  /* {
+  {
     id: 11,
     description: `<p class="pt-0">Você está construindo um aplicativo baseado em IA.</p>
                   <p class="pt-0">Você precisa garantir que o aplicativo use os princípios de IA responsável.</p>
@@ -298,5 +298,242 @@ export const questions_ia_900 = [
     ],
     expanation: "Estabelecer um comitê de governança de risco garante o princípio de privacidade e segurança",
     reference: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai#reliability-and-safety"
-  }, */
+  },
+  {
+    id: 12,
+    description: `<p class="pt-0">Você tem um conjunto de dados que contém informações sobre viagens de táxi ocorridas durante um determinado período.</p>
+                  <p class="pt-0">Você precisa treinar um modelo para prever a tarifa de uma viagem de táxi.</p>
+                  <p class="pt-2">O que você deve usar como recurso?</p>`,
+    answers: [
+      {
+        number: 1,
+        description: "O número de viagens de táxi no conjunto de dados",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "A distância percorrida em viagens individuais de táxi",
+        correct: true
+      },
+      {
+        number: 3,
+        description: "A tarifa de viagens individuais de táxi",
+        correct: false
+      },
+      {
+        number: 4,
+        description: "O ID de viagem de viagens individuais de táxi",
+        correct: false
+      },
+    ],
+    expanation: "O rótulo é a coluna que você deseja prever. Os recursos identificados são as entradas que você fornece ao modelo para prever o rótulo.",
+    reference: "https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/predict-prices"
+  },
+  {
+    id: 13,
+    description: `<p class="pt-0">Você precisa prever o nível do mar em metros para os próximos 10 anos.</p>
+                  <p class="pt-0">Que tipo de aprendizado de máquina você deve usar?</p>`,
+    answers: [
+      {
+        number: 1,
+        description: "Classificação",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "Regressão",
+        correct: true
+      },
+      {
+        number: 3,
+        description: "Agrupamento",
+        correct: false
+      },
+    ],
+    expanation: `<p class="pt-0">No sentido mais básico, regressão refere-se à previsão de um alvo numérico.</p>
+                <p class="pt-0">A regressão linear tenta estabelecer uma relação linear entre uma ou mais variáveis independentes e um resultado numérico ou variável dependente.</p>
+                <p class="pt-0">Você usa este módulo para definir um método de regressão linear e, em seguida, treinar um modelo usando um conjunto de dados rotulado. O modelo treinado pode então ser usado para fazer previsões.</p>`,
+    reference: "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/linear-regression"
+  },
+  {
+    id: 14,
+    description: `<p class="pt-0">Qual serviço você deve usar para extrair texto, pares chave/valor e dados de tabela automaticamente de documentos digitalizados?</p>`,
+    answers: [
+      {
+        number: 1,
+        description: "Form Recognizer",
+        correct: true
+      },
+      {
+        number: 2,
+        description: "Language Understanding (Compreensão de linguagem)",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "Visão Personalizada",
+        correct: false
+      },
+    ],
+    expanation: "Acelere seus processos de negócios automatizando a extração de informações. O Form Recogniser aplica aprendizado de máquina avançado para extrair com precisão texto, pares de chave/valor e tabelas de documentos. Com apenas alguns exemplos, o Form Recognizer adapta sua compreensão aos seus documentos, tanto no local quanto na nuvem. Transforme formulários em dados utilizáveis por uma fração do tempo e do custo, para que você possa dedicar mais tempo agindo nas informações em vez de compilá-las.",
+    reference: "https://azure.microsoft.com/en-us/services/cognitive-services/form-recognizer/"
+  },
+  {
+    id: 15,
+    description: `<p class="pt-0">Você usa o designer do Azure Machine Learning para publicar um pipeline de inferência.</p>
+                  <p class="pt-0">Quais são os dois parâmetros que você deve usar para acessar o serviço web?</p>`,
+    answers: [
+      {
+        number: 1,
+        description: "O nome do modelo e a chave de autenticação",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "•	O ponto final do treinamento e o ponto final REST",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "A chave de autenticação e o ponto final REST", 
+        correct: true
+      },
+      {
+        number: 4,
+        description: "O nome do modelo e o ponto final REST",
+        correct: false
+      },
+    ],
+    expanation: `<p class="pt-2">Você pode consumir um pipeline publicado na página Pipelines publicados.</p>
+                  <p class="pt-0">Selecione um pipeline publicado e encontre o endpoint REST dele.</p>
+                  <p class="pt-0">Para consumir o pipeline, você precisa de:</p>
+                  <p class="pt-0">✑ O ponto de extremidade REST do seu serviço</p>
+                  <p class="pb-0">✑ A chave primária do seu serviço</p>`,
+    reference: "https://docs.microsoft.com/en-in/learn/modules/create-regression-model-azure- designer de aprendizado de máquina/serviço de implantação"
+  },
+  {
+    id: 16,
+    description: `<p class="pt-0"></p>
+                  <p class="pt-0"></p>
+                  <p class="pt-2"></p>`,
+    answers: [
+      {
+        number: 1,
+        description: "",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "",
+        correct: false
+      },
+    ],
+    expanation: "",
+    reference: ""
+  },
+  {
+    id: 17,
+    description: `<p class="pt-0"></p>
+                  <p class="pt-0"></p>
+                  <p class="pt-2"></p>`,
+    answers: [
+      {
+        number: 1,
+        description: "",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "",
+        correct: false
+      },
+    ],
+    expanation: "",
+    reference: ""
+  },
+  {
+    id: 18,
+    description: `<p class="pt-0"></p>
+                  <p class="pt-0"></p>
+                  <p class="pt-2"></p>`,
+    answers: [
+      {
+        number: 1,
+        description: "",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "",
+        correct: false
+      },
+    ],
+    expanation: "",
+    reference: ""
+  },
+  {
+    id: 19,
+    description: `<p class="pt-0"></p>
+                  <p class="pt-0"></p>
+                  <p class="pt-2"></p>`,
+    answers: [
+      {
+        number: 1,
+        description: "",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "",
+        correct: false
+      },
+    ],
+    expanation: "",
+    reference: ""
+  },
+  {
+    id: 20,
+    description: `<p class="pt-0"></p>
+                  <p class="pt-0"></p>
+                  <p class="pt-2"></p>`,
+    answers: [
+      {
+        number: 1,
+        description: "",
+        correct: false
+      },
+      {
+        number: 2,
+        description: "",
+        correct: false
+      },
+      {
+        number: 3,
+        description: "",
+        correct: false
+      },
+    ],
+    expanation: "",
+    reference: ""
+  },
 ]

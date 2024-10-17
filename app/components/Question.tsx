@@ -58,7 +58,7 @@ export default function Question({ id, description, answers, explanation, refere
           {reference.length > 0 && (
             <ul className="list-disc"> {
             reference.map((data, i) => (
-              <li className="ml-2 py-1">
+              <li key={i} className="ml-2 py-1">
                 <Link
                   href={reference[i]}
                   target="_blank"

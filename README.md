@@ -1,16 +1,12 @@
 ## Projeto: App simulado para certificação Microsoft AI-900
-<br>
 <hr>
 
 ### :zap: Tecnologias
 * [NextJS](https://nextjs.org/)
 * [tailwindcss](https://tailwindcss.com/)
-<br>
 <hr>
 
 ## :computer: Clone
-
-##### Repositório [prod 192.168.1.10 - /mnt/nfs/NFS_SABDIWEB_PRD/neoagro.abdi.com.br](https://github.com/me-wsantos/ia900-simulado)
 
 ##### 1 - Clonar o repositório
   `git clone https://github.com/me-wsantos/ia900-simulado.git`

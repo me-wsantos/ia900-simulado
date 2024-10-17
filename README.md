@@ -8,6 +8,19 @@
 <br>
 <hr>
 
+## :computer: Clone
+
+##### Repositório [prod 192.168.1.10 - /mnt/nfs/NFS_SABDIWEB_PRD/neoagro.abdi.com.br](https://github.com/me-wsantos/ia900-simulado)
+
+##### 1 - Clonar o repositório
+  `git clone https://github.com/me-wsantos/ia900-simulado.git`
+
+##### 2 - Abrir a pasta do projeto e instalar as dependências
+  `npm install`
+
+##### 3 - Iniciar a aplicação
+  `npm run dev`
+
 ### :technologist: Autor
   <a href="https://github.com/me-wsantos">
    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/179779189?v=4" width="100px;" alt=""/>

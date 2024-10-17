@@ -22,6 +22,7 @@ interface IAppContext {
 
 const AppContext = createContext({} as IAppContext)
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const AppContextProvider = ({ children }: any) => {
   const [answered, setAnswered] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState(0)

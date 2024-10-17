@@ -4,7 +4,7 @@ import { IRadio } from "../intefaces"
 import useAppContext from "../context/appContext"
 
 export default function Radio({ id, description, correct }: IRadio) {
-  const { answered, setAnswered, setIsCorrect, selectedAnswer, setSelectedAnswer, isCorrect, correctAnswers, setCorrectAnswers } = useAppContext()
+  const { answered, setAnswered, setIsCorrect, setSelectedAnswer, correctAnswers, setCorrectAnswers } = useAppContext()
 
   const checkCorrectAnswer = (correct: boolean) => {
     if (!answered && correct)  setCorrectAnswers(correctAnswers + 1)

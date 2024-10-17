@@ -12,7 +12,7 @@ export default function Home() {
           href="/start"
           className="bg-blue-700 w-3/4 py-3 ml-4 rounded-lg text-lg text-center font-bold disabled:bg-gray-500"
         >
-          Iniciar
+          Iniciar simulado
         </Link>
       </main>
     </div>

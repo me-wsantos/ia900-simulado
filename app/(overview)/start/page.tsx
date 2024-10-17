@@ -28,9 +28,9 @@ export default function Home() {
     setAnswered(false)
     setSelectedAnswer(0)
 
-    if ((currentQuestion + 1) == totalQuestions) {
+    //if ((currentQuestion + 1) == totalQuestions) {
       redirect("/result")
-    }
+    //}
   }, [currentQuestion])
 
   //Cronometro
@@ -69,8 +69,9 @@ export default function Home() {
             id={questions_ia_900[currentQuestion].id}
             description={questions_ia_900[currentQuestion].description}
             answers={questions_ia_900[currentQuestion].answers}
-            explanation={questions_ia_900[currentQuestion].expanation}
+            explanation={questions_ia_900[currentQuestion].explanation}
             reference={questions_ia_900[currentQuestion].reference}
+            image={questions_ia_900[currentQuestion].image}
           />
         </div>
 

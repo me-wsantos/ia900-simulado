@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import Link from "next/link"
 import useAppContext from "@/app/context/appContext"
 
 export default function Home() {
@@ -23,6 +24,13 @@ export default function Home() {
             <div className="mt-4">{ `Respostas corretas: ${correctAnswers } de ${totalQuestions}` }</div>
             <div className="mt-4">{ "Tempo de prova: 28 minutos" }</div>
           </div>
+
+          <Link
+          href="/"
+          className="bg-blue-700 w-36 py-2 ml-4 rounded-lg text-lg text-center font-bold disabled:bg-gray-500"
+        >
+          Página inicial
+        </Link>
       </main>
     </div>  
   )
